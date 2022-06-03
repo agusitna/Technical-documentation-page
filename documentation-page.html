@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Bootstrap Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Download">Download</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Accessibility">Accessibility</a>
+            </li>
+            <li><a class="nav-link" href="#RFS">RFS</a></li>
+            <li><a class="nav-link" href="#RTL">RTL</a></li>
+            <li>
+                <a class="nav-link" href="#JavaScript">JavaScript</a>
+            </li>
+            </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.            
+            </p>
+            <h3>CSS</h3>
+            <p>Copy-paste the stylesheet <span><</span>link<span>></span> into your <span><</span>head<span>></span> before all other stylesheets to load our CSS.</p>
+            <code><<span style="color: #0d6efd">link href=</span><span style="color:#dc3545">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span> <span style="color: #0d6efd">ref=</span><span style="color:#dc3545">"stylesheet"</span> <span style="color: #0d6efd">integrity=</span><span style="color:#dc3545">"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"</span> <span style="color: #0d6efd">crossorigin=</span><span style="color:#dc3545">"anonymous"</span>></code>
+            <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors.</p>
+            <h3>Community</h3>
+            <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
+            <li>Read and subscribe to <a href="https://blog.getbootstrap.com/">Official Bootstrap Blog</a>.</li>
+            <li>Join the official <a href="https://bootstrap-slack.herokuapp.com/">Slack room</a>.</li>
+        </section>
+        <section id="Download" class="main-section">
+            <header>Download</header>
+            <p>Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.</p>
+            <h3>Compiled CSS and JS</h3>
+            <p>Download ready-to-use compiled code for Bootstrap v5.1.3 to easily drop into your project, which includes:</p>
+            <li>Compiled and minified CSS bundles <a href="https://getbootstrap.com/docs/5.1/getting-started/contents/#css-files">(see CSS files comparison)</a></li>
+            <li>Compiled and minified JavaScript plugins <a href="https://getbootstrap.com/docs/5.1/getting-started/contents/#js-files">(see JS files comparison)</a></li>
+        </section>
+        <section id="Accessibility" class="main-section">
+            <header>Accessibility</header>
+            <p>A brief overview of Bootstrap’s features and limitations for the creation of accessible content.</p>
+            <h3>Visually hidden content</h3>
+            <code><span><</span>p class="text-danger">
+                &nbsp;&nbsp;<span><</span>span class="visually-hidden">Danger: <span><</span>/span>
+                &nbsp;&nbsp;This action is not reversible
+                <span><</span>/p></code>
+            <p></p>
+        </section>
+        <section id="RFS" class="main-section">
+            <header>RFS</header>
+            <p>Bootstrap’s resizing engine responsively scales common CSS properties to better utilize available space across viewports and devices.</p>
+            <H3>Using the mixins</H3>
+            <p>The rfs() mixin has shorthands for font-size, margin, margin-top, margin-right, margin-bottom, margin-left, padding, padding-top, padding-right, padding-bottom, and padding-left. See the example below for source Sass and compiled CSS.</p>
+            <code>.title {
+                &nbsp;&nbsp;@include font-size(4rem);
+              }</code>
+            
+        </section>
+        <section id="RTL" class="main-section">
+            <header>RTL</header>
+            <p>Learn how to enable support for right-to-left text in Bootstrap across our layout, components, and utilities.</p>
+            <h3>Required HTML</h3>
+            <p>There are two strict requirements for enabling RTL in Bootstrap-powered pages.
+                <ol>
+                <li>Set dir="rtl" on the <span><</span>html> element.</li>
+                <li> Add an appropriate lang attribute, like lang="ar", on the <span><</span>html> element.</li>
+                </ol>
+            From there, you’ll need to include an RTL version of our CSS. For example, here’s the stylesheet for our compiled and minified CSS with RTL enabled:</p>
+            <code><<span style="color: #0d6efd">link rel=</span><span style="color:#dc3545">"stylesheet"</span> <span style="color: #0d6efd">href=</span><span style="color:#dc3545">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"</span> <span style="color: #0d6efd">integrity=</span><span style="color:#dc3545">"sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"</span> <span style="color: #0d6efd">crossorigin=</span><span style="color:#dc3545">"anonymous"</span>></code>
+        </section>
+        <section id="JavaScript" class="main-section">
+            <header>JavaScript</header>
+            <p>Bring Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.</p>
+            <h3>Using Bootstrap as a module</h3>
+            <p>We provide a version of Bootstrap built as ESM (bootstrap.esm.js and bootstrap.esm.min.js) which allows you to use Bootstrap as a module in your browser, if your <a href="https://caniuse.com/es6-module"> targeted browsers support it</a>.</p>
+            <code><span><</span>script type="module">
+                import { Toast } from 'bootstrap.esm.min.js'
+              
+                Array.from(document.querySelectorAll('.toast'))
+                  .forEach(toastNode => new Toast(toastNode))
+              <span><</span>/script></code>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
